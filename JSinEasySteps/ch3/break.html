@@ -9,6 +9,14 @@
 			console.log("Outer loop: " + i)
 			for(j = 1; j < 4; j++)
 			{
+				if((i === 1) && (j === 2)) {
+					console.log("\tSkipped: " + j)
+					continue
+				}
+				if((i === 2) && (j === 2)){
+					console.log("\tBroken: " + j)
+					break
+				}
 				console.log("\tInner loop: " + j)
 			}
 		}
