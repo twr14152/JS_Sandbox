@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<head></head>
+<body>
+	<script>
+		let property, car = {
+			make: 'Jeep',
+			model: 'Wrangler',
+			accelerate: function() {
+				return this.model + ' drives away'},
+			brake: function() {
+				return this.make + ' pulls up'}
+		}
+		for (property in car) {
+			console.log(property + ': ' + car[property])
+		}
+	</script>
+</body>
+</html>
